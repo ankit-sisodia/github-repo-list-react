@@ -24,6 +24,31 @@
     position: relative;
     top: calc(100vh/4);
     left: calc(100vw/4);
+    z-index: 99999999;
+}
+
+.info-el-loading{
+    text-align: center;
+    width: 25vw;
+    margin: auto;
+    padding: 10px;
+    background: #4a4646;
+    color: white;
+    position: relative;
+    top: calc(100vh/4);
+    /* left: calc(100vw/2); */
+    z-index: 99999999;
+}
+
+.loading-mask{
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    opacity: 0.5;
+    background-color: #bbb;
+    position: absolute;
+    overflow: hidden;
+    
 }
 
 .repo-header {

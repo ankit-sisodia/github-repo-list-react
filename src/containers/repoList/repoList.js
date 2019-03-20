@@ -84,7 +84,7 @@ class RepoList extends Component {
                 <Search searched={(event)=>{this.searchHandler(event)}} clicked={(val)=>{this.clickHandler(val)}}/>
                 <div className="main-container">    
                     {  !this.state.searched && (this.state.repos.length === 0 || (!this.state.dataLoaded && !this.state.searched))? (<div className="info-el">Type and press Button or press Enter to search.</div>): null }    
-                    { (!this.state.dataLoaded && this.state.searched )? (<div className="info-el">Loading data...</div>): null }    
+                    { (!this.state.dataLoaded && this.state.searched)? (<div className="loading-mask"><div className="info-el-loading">Loading data...</div></div>): null }    
                     { this.state.repos.length > 0? (
                         <div style={{ width: '50%' }}> 
                             <div className="repo-header">
