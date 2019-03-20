@@ -21,9 +21,9 @@ class RepoList extends Component {
             return false;
         }
         this.setState({searched: true, dataLoaded: false});
-        axios.get( `/{${value}}` )
+        axios.get( `/{${value}}?&sort=score&order=desc` )
         .then( response => {
-            let repos = response.data.repositories.slice(0, 10);
+            let repos = response.data.repositories.slice(0, 100);
             repos.map(repo=>repo['selected'] = false)
             this.setState({
                 dataLoaded: true, 
