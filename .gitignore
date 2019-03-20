@@ -2,3 +2,5 @@
 /build
 /package-lock.json
 /README.md
+/debug.log
+*firebase*
