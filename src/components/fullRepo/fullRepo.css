@@ -1,0 +1,33 @@
+.fullRepo {
+    width: 100%;
+    float: right;
+    text-align: center;
+    height: calc( 100vh - 50px );
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.fullRepo div{
+    display: flex;
+    border: 1px solid #ccc;
+    height: 30px;
+    padding: 25px 20px 10px 20px;
+    justify-content: space-between;
+}
+
+.fullRepo div span:last-child{
+    flex: 10;
+}
+
+.full-repo-info{
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 25vw;
+    margin: auto;
+    top: calc(100vh/4);
+    position: relative;
+    background-color: #656565;
+    padding: 10px 5px;
+    color: #fff;
+    text-align: center;
+}
