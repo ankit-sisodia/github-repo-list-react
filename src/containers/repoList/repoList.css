@@ -12,6 +12,7 @@
     overflow-y: auto;
     height: calc( 100vh - 115px );
     border-bottom: 1px solid #eee;
+    overflow-x: hidden;
 }
 
 .info-el {

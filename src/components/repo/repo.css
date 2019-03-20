@@ -19,3 +19,31 @@
     margin: 16px 0;
     padding: 0px 30px;
 }
+
+@media(max-width: 480px){
+    .repo {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #eee;
+        min-height: 50px;
+        cursor: pointer;
+    }
+    
+    .repo.selected {
+        background-color: #7b96e8;
+    }
+    
+    .repo:hover,
+    .repo:active {
+        background-color: #C0DDF5;
+    }
+    
+    .repo-item {
+        margin: 5px 0px 0px 0px;
+        padding: 0 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 50%;
+        white-space: nowrap;
+    }
+}

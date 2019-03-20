@@ -15,10 +15,10 @@ class FullRepo extends Component {
         if ( this.props.id ) {
             repo = (
                 <div className="fullRepo">
-                    <div><span>Language: </span><span>{this.props.repo.language}</span></div>
-                    <div><span>Followers: </span><span>{this.props.repo.followers}</span></div>
-                    <div><span>URL: </span><span>{this.props.repo.url}</span></div>
-                    <div><span>Description: </span><span>{this.props.repo.description}</span></div>
+                    <div><span>Language: </span><span title={this.props.repo.language}>{this.props.repo.language}</span></div>
+                    <div><span>Followers: </span><span title={this.props.repo.followers}>{this.props.repo.followers}</span></div>
+                    <div><span>URL: </span><span title={this.props.repo.url}>{this.props.repo.url}</span></div>
+                    <div><span>Description: </span><span title={this.props.repo.description}>{this.props.repo.description}</span></div>
                 </div>
 
             );

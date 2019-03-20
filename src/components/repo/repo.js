@@ -13,8 +13,8 @@ const repo = (props) => {
 
     return (
         <div className={classes.join(' ')} onClick={props.clicked}>
-            <div className="repo-item">{props.title}</div>
-            <div className="repo-item">{props.author}</div>
+            <div className="repo-item" title={props.title}>{props.title}</div>
+            <div className="repo-item" title={props.author}>{props.author}</div>
         </div>
     )
 };
