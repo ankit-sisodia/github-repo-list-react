@@ -60,9 +60,7 @@ class RepoList extends Component {
     }
 
     searchHandler = (event) => {
-        if( event.key.toLowerCase() === 'enter' ){
-            this.getRepos(event.target.value);            
-        }
+        this.getRepos(event.target.value);            
     }
 
     clickHandler = (val) => {
